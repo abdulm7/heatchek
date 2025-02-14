@@ -1,0 +1,11 @@
+[package]
+name = "heatchek"
+version = "0.1.0"
+edition = "2021"
+authors = ["Abdul", "Austin", "Gabe"]
+description = "A system management tool"
+
+[dependencies]
+sysinfo = "0.29.0"
+clap = { version = "4.3.0", features = ["derive"] }
+tokio = { version = "1.28.0", features = ["full"] }
