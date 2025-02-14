@@ -9,3 +9,4 @@ description = "A system management tool"
 sysinfo = "0.29.0"
 clap = { version = "4.3.0", features = ["derive"] }
 tokio = { version = "1.28.0", features = ["full"] }
+systemstat = "0.2.4"
