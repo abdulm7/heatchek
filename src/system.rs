@@ -29,9 +29,9 @@ impl SystemMonitor {
 
     pub fn memory_info(&self) -> (u64, u64, u64) {
         (
-            self.sys.total_memory(),
-            self.sys.used_memory(),
-            self.sys.total_memory() - self.sys.used_memory(),
+            self.sys.total_memory() * 1024,  // Convert KiB to bytes
+            self.sys.used_memory() * 1024,   // Convert KiB to bytes
+            (self.sys.total_memory() - self.sys.used_memory()) * 1024  // Convert KiB to bytes
         )
     }
 
